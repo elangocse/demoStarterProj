@@ -8,6 +8,6 @@ applications:
   - cloudapps-tool-registry
   - config-server
   routes:
-  - route: demoStarterProj-dev.apps.pcf.dxc.com
+  - route: demoStarterProj-DEVELOPMENT.apps.pcf.dxc.com
   env:
     SPRING_PROFILES_ACTIVE: pcf
