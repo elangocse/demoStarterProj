@@ -20,7 +20,7 @@ node
     }
     
    stage('PCF Test Deploy Phase') {
-         pushToCloudFoundry cloudSpace: 'dev', credentialsId: 'pivotal_prod_credentials',organization: 'cactus', selfSigned: true,  pluginTimeout: 1000, target: 'https://api.sys.pcf.dxc.com', manifestChoice: [manifestFile: 'manifest_development.yml']
+         pushToCloudFoundry cloudSpace: 'dev', credentialsId: 'pivotal_prod_credentials',organization: 'cactus_testing', selfSigned: true,  pluginTimeout: 360, target: 'https://api.sys.pcf.dxc.com', manifestChoice: [manifestFile: 'manifest_development.yml']
      } 
    
   /*stage('PCF Prod Deploy Phase') {	
